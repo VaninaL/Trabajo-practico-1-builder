@@ -25,6 +25,14 @@ var computadoraBuilder = /** @class */ (function () {
         this.sistemaOperativo = pSistemaOperativo;
         return this;
     };
+    computadoraBuilder.prototype.reset = function () {
+        this.procesador = "";
+        this.RAM = 0;
+        this.almacenamiento = "";
+        this.tarjetaGrafica = "";
+        this.sistemaOperativo = "";
+        return this;
+    };
     computadoraBuilder.prototype.build = function () {
         return new computadora_1.computadora(this.procesador, this.RAM, this.almacenamiento, this.tarjetaGrafica, this.sistemaOperativo);
     };

@@ -29,6 +29,14 @@ export class computadoraBuilder{
                 this.sistemaOperativo = pSistemaOperativo;
                 return this;
             }
+    reset() {
+            this.procesador = "";
+            this.RAM = 0;
+            this.almacenamiento = "";
+            this.tarjetaGrafica = "";
+            this.sistemaOperativo = "";
+            return this
+            }
     build(): computadora {
             return new computadora(this.procesador,this.RAM,this.almacenamiento,this.tarjetaGrafica,this.sistemaOperativo);
             
