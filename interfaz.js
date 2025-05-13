@@ -26,11 +26,11 @@ var computadoraBuilder = /** @class */ (function () {
         return this;
     };
     computadoraBuilder.prototype.reset = function () {
-        this.procesador = "";
+        this.procesador = "No especificado";
         this.RAM = 0;
-        this.almacenamiento = "";
-        this.tarjetaGrafica = "";
-        this.sistemaOperativo = "";
+        this.almacenamiento = "No especificado";
+        this.tarjetaGrafica = "No especificado";
+        this.sistemaOperativo = "No especificado";
         return this;
     };
     computadoraBuilder.prototype.build = function () {
